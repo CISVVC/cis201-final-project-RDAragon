@@ -1,8 +1,13 @@
 #include<iostream>
+#include"concordance.h"
 
 using namespace std;
 
 int main()
 {
-   return 0;
+    Concordance con("alice.txt");
+    con.parse();
+    con.print();
+
+    return 0;
 }
